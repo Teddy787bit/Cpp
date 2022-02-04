@@ -23,7 +23,7 @@ class feMale : public virtual Humnas
     }
    
 };
-class student : public Male,feMale
+class student : public Male, public feMale
 {
     public:
     void schl(char sname[10]){
@@ -31,14 +31,14 @@ class student : public Male,feMale
     }
 
 };
-class pro : public Male,feMale
+class pro : public Male,public feMale
 {
     public:
     void prof(char pname[10]){
         cout<<"Working as a :- "<<pname<<endl;
     }
 };
-class child: public  Male,feMale
+class child: public virtual  Male, public feMale
 {
     public:
 
