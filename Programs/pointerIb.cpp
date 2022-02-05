@@ -19,7 +19,7 @@ int main(){
     Complex *ptr = new Complex;
     ptr->setData(1, 54);
     ptr->getData(); 
-
+   // (*ptr).getData();
     // Array of Objects
     Complex *ptr1 = new Complex[4]; 
     ptr1->setData(1, 4); 

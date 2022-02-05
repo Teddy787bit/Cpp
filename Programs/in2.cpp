@@ -3,8 +3,8 @@ using namespace std;
 class Humnas
 {
     public:
-    void brith(){
-        cout<<"Human has taken brith"<<endl;
+    void birth(){
+        cout<<"Human has taken birth"<<endl;
     }
 };
 class Male : public virtual Humnas
@@ -15,7 +15,7 @@ class Male : public virtual Humnas
     }
    
 };
-class feMale : public virtual Humnas
+class feMale : public virtual  Humnas
 {
     public:
     void Gender(){
@@ -26,7 +26,7 @@ class feMale : public virtual Humnas
 class student : public virtual Male, public virtual feMale
 {
     public:
-    void schl(char sname[10]){
+    void schl(char sname[20]){
         cout<<"Taken admission in "<<sname<<endl;
     }
 
@@ -46,13 +46,13 @@ class child: public virtual  Male, public virtual feMale , public virtual studen
 int main(){
   
     child c1,c2;
-    char sname[10]="Pradip";
+    char sname[20]="Disha_School";
     char pname[10]="teacher";
     //c1.schl(sname);
-    c2.brith();
-    c1.brith();
+    c2.birth();
+    c1.birth();
     c1.gender();
     c1.Gender();
-    
+    c1.schl(sname);
     return 0;
 }

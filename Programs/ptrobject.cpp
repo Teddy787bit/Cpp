@@ -1,3 +1,9 @@
+/**
+ * @file ptrobject.cpp
+Dynamic Object
+Array of Object
+ * 
+ */
 #include<iostream>
 using namespace std;
 
