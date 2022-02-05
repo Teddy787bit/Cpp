@@ -29,7 +29,7 @@ Defination:-
 using namespace std;
 class Addition{
     int a,b;
-   friend Addition sumAdd(Addition a1,Addition a2);
+    friend Addition sumAdd(Addition a1,Addition a2);
     public:
     void setNumber(int n1,int n2){
         a=n1;
@@ -40,9 +40,9 @@ class Addition{
     }
 
 };
-Addition sumAdd(Addition a1,Addition a2){  //Object as a arguments
-    Addition a3;  //Defining new object
-    a3.setNumber((a1.a+a2.a),(a1.b+a2.b));
+Addition sumAdd(Addition a1,Addition a2){
+    Addition a3;
+    a3.setNumber((a1.a+a2.a),(a2.b+a2.b));
     return a3;
 }
 
