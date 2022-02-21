@@ -8,6 +8,7 @@ class subclass_name : access_mode base_class_name
 };
 
 
+
 Access Mode:-
 It is optional if given then it may be private or public.
 Private- When base class is privatly inherited then public data member and member function will be inherited as private in drived class.
