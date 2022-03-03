@@ -30,6 +30,7 @@ using namespace std;
 class Addition{
     int a,b;
     friend Addition sumAdd(Addition a1,Addition a2);
+ 
     public:
     void setNumber(int n1,int n2){
         a=n1;
@@ -37,9 +38,15 @@ class Addition{
     }
     void printNumber(){
         cout<<"Number is :-" <<a <<" "<<b<<endl;
+        
     }
 
 };
+void test(Addition a1){
+    Addition a2;
+    cout<<"Hello This is Friend Function"<<endl;
+    
+}
 Addition sumAdd(Addition a1,Addition a2){
     Addition a3;
     a3.setNumber((a1.a+a2.a),(a2.b+a2.b));
@@ -50,7 +57,6 @@ int main(){
     Addition a1,a2,sum;
     a1.setNumber(1,4);
     a1.printNumber();
-
     a2.setNumber(10,15);
     a2.printNumber();
     sum=sumAdd(a1,a2);
